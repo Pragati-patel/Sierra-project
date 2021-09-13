@@ -14,6 +14,8 @@ function myFunction() {
 var slideIndex = 1;
 showSlides(slideIndex);
 showMySlides(slideIndex);
+showMySlider(slideIndex);
+
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
@@ -72,3 +74,47 @@ function showMySlides(n) {
   dots[slideIndex - 1].className += " active";
   console.log(dots[slideIndex - 1], "dots");
 }
+function currentArrowSlide(n) {
+    console.log("current arrow");
+    showMySlider((slideIndex = n));
+  }
+ 
+
+  function showMySlider(n) {
+    var i;
+    var slides = document.getElementsByClassName("third-slider-com");
+    // var dots = document.getElementsByClassName("section1-dot");
+    console.log("show slides", n);
+    // console.log("show slides",slides);
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+    console.log(slides[slideIndex - 1]);
+  }
+  function showThirdSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("third-slider-com");
+    var dots = document.getElementsByClassName("sec8-com");
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }

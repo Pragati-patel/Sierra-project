@@ -193,10 +193,10 @@ p {
 .dot3 {
   left: 56%;
 }
-.active,
+/* .active,
 .dot:hover {
   background-color: #717171;
-}
+} */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -459,7 +459,7 @@ p {
   background: #002852;
   justify-content: center;
   margin: 5% 0;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   align-items: center;
 }
 .sec8-com {
@@ -897,11 +897,12 @@ p {
     font-size: 15px;
   }
   .footer {
+ 
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: unset;
     padding-bottom: 20%;
+    padding-left: 40px;
   }
   .footer h1 {
     font-size: 20px;
@@ -1136,6 +1137,7 @@ p {
   .sec4-2 {
     height: 315px;
     margin-top: 20%;
+    justify-content: center;
 }
 .sec4-3{
     display: none;
@@ -1166,7 +1168,7 @@ p {
     left: 203px;
   }
   .section-7 {
-    width: 100%;
+    /* width: 100%; */
     margin: 10px;
     padding: 0;
   }
