@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        position: absolute;
+        /* top: 0; */
+        /* right: 403px; */
+        bottom: 0;
+        left: 50%;
+      }
+      .dot2 {
+        left: 53%;
+      }
+      .dot3 {
+        left: 56%;
+      }
+      .active,
+      .dot:hover {
+        background-color: #717171;
+      }
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .main-slider {
+        border: 2px solid black;
+        width: 80%;
+      }
+      .third_slider {
+        border: 2px solid black;
+      }
+      .third-slider-com{
+          border: 3px solid green;
+          margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-1" style="margin-bottom: 30%">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="sec1-1">
+        <h1>SIERRA AZUL PARTNERS</h1>
+        <p>Focusing On Invoation And Development</p>
+      </div>
+      <div class="sec1-2">
+        <div class="slider">
+          <!-- <img src="img/Rectangle 1.png" alt=""> -->
+          <div class="mySlides fade">
+            <img src="img/slider1.png" style="width: 800px; height: 750px" />
+          </div>
+          <div class="mySlides fade">
+            <img src="img/slider2.png" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="img/slider3.png" style="width: 100%" />
+          </div>
+        </div>
+        <div style="text-align: center">
+          <span class="dot dot1 section1-dot" onclick="currentSlide(1)"></span>
+          <span class="dot dot2 section1-dot" onclick="currentSlide(2)"></span>
+          <span class="dot dot3 section1-dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <div class="header">
+        <ul class="header-ul">
+          <li>
+            <img
+              src="img/image_1-removebg-preview (1) 1.png"
+              width="79px"
+              height="52.97px"
+            />
+          </li>
+          <li>AVRE Fund</li>
+          <li>Principals</li>
+          <li>Projects</li>
+          <li>Giving Back</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-10">
+      <div class="rectangle1">
+        <img src="img/Rectangle 27.png" alt="" />
+      </div>
+      <div class="rectangle2">
+        <img src="img/Rectangle 28.png" alt="" />
+      </div>
+
+      <div class="main-slider">
+        <!-- slider-1  -->
+        <div class="sec10-slider1 sec10-slide fade">
+          <div class="sec10-pic"></div>
+          <div class="sec10-card">
+            <h2 style="padding: 30px 0">Principals</h2>
+            <p style="padding: 15px 0 30px">
+              <span class="sec10-span">Nick Rajkovich </span><br />
+              Founder and Managing Partner
+            </p>
+            <p>
+              Nick oversees all of Sierra Azul Partners development activity
+              from site selection, financing and entitlements through
+              completion. Prior to forming Sierra Azul Partners, he was a vice
+              president Farmington Fresh, a leading agricultural commodity
+              processing company. After successfully leading the sale of
+              Farmington Fresh Nick returned back to San Jose, CA and real
+              estate investment. Nick obtained both his BA from Loyola Marymount
+              University in Los Angeles and MBA from San Jose State University.
+            </p>
+          </div>
+        </div>
+        <!-- slider-2  -->
+        <div class="sec10-slider2 sec10-slide fade">
+          <div class="sec10-pic sec10-pic2"></div>
+          <div class="sec10-card">
+            <h2 style="padding: 30px 0">Principals</h2>
+            <p style="padding: 15px 0 30px">
+              <span class="sec10-span"> Garrison Rajkovich </span><br />
+
+              Founder and Managing Partner
+            </p>
+            <p>
+              Garrison oversees all of Sierra Azul Partners development activity
+              from site selection, financing and entitlements through
+              completion. Prior to forming Sierra Azul Partners, Garrison was
+              the senior purchasing manager at Fresh Innovations, one of
+              California’s largest fresh fruit processors. Before joining Fresh
+              Innovations Garrison spent several years as a financial analyst in
+              the tech industry in San Jose, CA. Garrison graduated from Cal
+              Poly San Luis Obispo, with BS in Agricultural Business and Land
+              Appraisal.
+            </p>
+          </div>
+        </div>
+        <div style="text-align: center">
+          <span
+            class="dot dot1 sec10-dot"
+            onclick="currentSection10Slide(1)"
+          ></span>
+          <span
+            class="dot dot2 sec10-dot"
+            onclick="currentSection10Slide(2)"
+          ></span>
+          <!-- <span class="dot dot3" onclick="currentSlide(3)"></span> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="third_slider">
+      <div class="third-slider-1 third-slider-com  fade">
+        <div class="section-8">
+          <div class="sec8-arrow1 sec8-com">
+            <img src="img/11.png" alt="" />
+          </div>
+          <div class="sec8-heading">
+            <h1>38 N Almaden Blvd, San Jose, CA 95110</h1>
+          </div>
+
+          <div class="sec8-arrow2 sec8-com">
+            <img src="img/Group (10).png" alt="" />
+          </div>
+        </div>
+
+        <div class="sec9-main">
+          <div class="section-9">
+            <div class="sec9-1">
+              <img src="img/Rectangle 11.png" alt="" />
+            </div>
+            <div class="sec9-2">
+              <p>
+                slider-1<br />Axis has dramatically changed the skyline of
+                downtown San Jose. Upscale urban condo living is the trademark
+                for this downtown San Jose high-rise residential tower. Axis
+                offers grand views of the downtown San Jose area. Located
+                adjacent to the DeAnza Hotel, Axis is walking distance to all of
+                downtown San Jose's amenities, including restaurants at historic
+                San Pedro Square, the HP Pavilion, and the downtown Farmer's
+                Market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-slider-2 third-slider-com  fade">
+        <div class="section-8">
+          <div class="sec8-arrow1 sec8-com">
+            <img src="img/11.png" alt="" />
+          </div>
+          <div class="sec8-heading">
+            <h1>second slider</h1>
+          </div>
+
+          <div class="sec8-arrow2 sec8-com">
+            <img src="img/Group (10).png" alt="" />
+          </div>
+        </div>
+
+        <div class="sec9-main">
+          <div class="section-9">
+            <div class="sec9-1">
+              <img src="img/Rectangle 11.png" alt="" />
+            </div>
+            <div class="sec9-2">
+              <p>
+                slider-2<br />Axis has dramatically changed the skyline of
+                downtown San Jose. Upscale urban condo living is the trademark
+                for this downtown San Jose high-rise residential tower. Axis
+                offers grand views of the downtown San Jose area. Located
+                adjacent to the DeAnza Hotel, Axis is walking distance to all of
+                downtown San Jose's amenities, including restaurants at historic
+                San Pedro Square, the HP Pavilion, and the downtown Farmer's
+                Market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third-slider-3 third-slider-com  fade">
+        <div class="section-8">
+          <div class="sec8-arrow1 sec8-com">
+            <img src="img/11.png" alt="" />
+          </div>
+          <div class="sec8-heading">
+            <h1>third slider</h1>
+          </div>
+
+          <div class="sec8-arrow2 sec8-com">
+            <img src="img/Group (10).png" alt="" />
+          </div>
+        </div>
+
+        <div class="sec9-main">
+          <div class="section-9">
+            <div class="sec9-1">
+              <img src="img/Rectangle 11.png" alt="" />
+            </div>
+            <div class="sec9-2">
+              <p>
+                slider-3<br />Axis has dramatically changed the skyline of
+                downtown San Jose. Upscale urban condo living is the trademark
+                for this downtown San Jose high-rise residential tower. Axis
+                offers grand views of the downtown San Jose area. Located
+                adjacent to the DeAnza Hotel, Axis is walking distance to all of
+                downtown San Jose's amenities, including restaurants at historic
+                San Pedro Square, the HP Pavilion, and the downtown Farmer's
+                Market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third-slider-4 third-slider-com  fade"> 
+        <div class="section-8">
+          <div class="sec8-arrow1 sec8-com">
+            <img src="img/11.png" alt="" />
+          </div>
+          <div class="sec8-heading">
+            <h1>fourth slider</h1>
+          </div>
+
+          <div class="sec8-arrow2 sec8-com">
+            <img src="img/Group (10).png" alt="" />
+          </div>
+        </div>
+
+        <div class="sec9-main">
+          <div class="section-9">
+            <div class="sec9-1">
+              <img src="img/Rectangle 11.png" alt="" />
+            </div>
+            <div class="sec9-2">
+              <p>
+                slider-4<br />Axis has dramatically changed the skyline of
+                downtown San Jose. Upscale urban condo living is the trademark
+                for this downtown San Jose high-rise residential tower. Axis
+                offers grand views of the downtown San Jose area. Located
+                adjacent to the DeAnza Hotel, Axis is walking distance to all of
+                downtown San Jose's amenities, including restaurants at historic
+                San Pedro Square, the HP Pavilion, and the downtown Farmer's
+                Market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      showMySlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        //   console.log("clicked",n)
+        showSlides((slideIndex = n));
+        // showMySlides((slideIndex=n))
+      }
+
+      function currentSection10Slide(n) {
+        showMySlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("section1-dot");
+        console.log("show slides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          console.log(slides[i], "slides[i]");
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      function showMySlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("sec10-slide");
+        var dots = document.getElementsByClassName("sec10-dot");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        console.log(dots[slideIndex - 1], "dots");
+      }
+    </script>
+  </body>
+</html>
